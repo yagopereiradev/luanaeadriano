@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luana e Adriano · 9 de janeiro de 2027</title>
+<meta name="description" content="Confirme sua presença no casamento de Luana e Adriano.">
+<meta name="theme-color" content="#2b1015">
+<meta name="color-scheme" content="only light">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Luana e Adriano · 9 de janeiro de 2027">
+<meta property="og:description" content="Você está convidado. Toque para confirmar sua presença.">
+<!-- depois de publicar, troque por endereço completo: https://SEU-DOMINIO/og.png (o WhatsApp exige) -->
+<meta property="og:image" content="/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%237b1e2b'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='27' fill='%23f6f0e4'%3ELA%3C/text%3E%3C/svg%3E">
+<script>
+/* sem JavaScript tudo aparece direto; quem já viu a abertura nesta visita não espera de novo */
+document.documentElement.classList.add("js");
+try { if (sessionStorage.getItem("visto")) document.documentElement.classList.add("skip"); } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f0e4;
+  --ink:#2a2320;
+  --ink-soft:rgba(42,35,32,.62);
+  --hair:rgba(42,35,32,.3);
+  --wine:#7b1e2b;
+  --pen:#23356d;
+  --desk:#2b1015;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;color-scheme:only light}
+body{
+  background:radial-gradient(120% 80% at 50% 0%,#4a1c25 0%,var(--desk) 60%,#1c080b 100%) fixed;
+  color:var(--ink);
+  font-family:"EB Garamond",Georgia,serif;
+  font-size:20px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  padding:14px 12px 40px;
+}
+
+/* ---------- folha de papel ---------- */
+.sheet{
+  position:relative;max-width:620px;margin:0 auto;background:var(--paper);
+  padding:clamp(46px,10vw,88px) clamp(28px,8vw,76px);
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 2px 5px rgba(0,0,0,.35),0 34px 60px -24px rgba(0,0,0,.6);
+}
+.sheet::before{ /* fibra do papel */
+  content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .38 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .11 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.sheet::after{ /* filete impresso */
+  content:"";position:absolute;inset:13px;border:1px solid var(--hair);pointer-events:none;
+}
+.sheet > *{position:relative}
+
+.invite{min-height:calc(100svh - 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.reply{margin-top:22px}
+
+/* ---------- tipografia ---------- */
+.caps{font-size:12.5px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;line-height:1.9}
+.script{font-family:"Pinyon Script",cursive;font-weight:400;color:var(--wine)}
+.hw{font-family:"Caveat",cursive;font-weight:500;color:var(--pen)}
+em,i{font-style:italic}
+
+.sprig{width:min(210px,56%);height:auto;margin-bottom:22px;overflow:visible}
+.sprig path{fill:none;stroke:var(--wine);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1}
+.sprig circle{fill:var(--wine)}
+.js .sprig path{stroke-dashoffset:1}
+.js .sprig circle{opacity:0}
+
+.names{font-size:clamp(66px,18vw,120px);line-height:.92;margin:20px 0 22px}
+.names .name{display:block;padding:.06em .2em}
+.js .names .name{clip-path:inset(-25% 100% -25% -10%)}
+.names .e{display:block;font:italic 400 .27em/1 "EB Garamond",serif;color:var(--ink);margin:.5em 0 .62em}
+
+.when{font-style:italic;font-size:clamp(19px,5vw,22px);line-height:1.5;margin-top:14px}
+.rule{width:44px;height:1px;background:var(--ink);opacity:.5;margin:26px auto;transform-origin:center}
+.place{font-size:19px;line-height:1.5}
+.place small{display:block;font-size:16px;color:var(--ink-soft)}
+.where{display:block;color:inherit;text-decoration:none;padding:4px 0}
+.where span{background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:1px}
+.count{font-style:italic;color:var(--wine);margin-top:26px;font-size:18px;min-height:1.5em}
+
+.cue{margin-top:30px;display:inline-flex;flex-direction:column;align-items:center;gap:10px;color:var(--ink);text-decoration:none}
+.cue i{display:block;width:1px;height:38px;background:var(--ink);transform-origin:top;animation:drip 2.6s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);opacity:1}55%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+
+a.ln{color:inherit;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;transition:background-size .45s ease;padding-bottom:1px}
+a.ln:hover{background-size:0 1px;background-position:100% 100%}
+
+/* ---------- entrada ---------- */
+.js .rise{opacity:0;transform:translateY(10px)}
+body.ready .rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+body.ready .names .name{animation:write 1.2s cubic-bezier(.55,.1,.3,1) forwards;animation-delay:var(--d,0s)}
+body.ready .sprig path{animation:draw 1.2s ease-in-out forwards;animation-delay:var(--d,0s)}
+body.ready .sprig circle{animation:rise .6s ease forwards .2s}
+body.ready .rule{animation:grow 1s ease both;animation-delay:var(--d,0s)}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes write{to{clip-path:inset(-25% -10% -25% -10%)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}}
+
+/* abertura pulada: segunda visita, ou quem rolou a página antes do fim */
+.skip .rise{opacity:1!important;transform:none!important;animation:none!important}
+.skip .names .name{clip-path:none!important;animation:none!important}
+.skip .sprig path{stroke-dashoffset:0!important;animation:none!important}
+.skip .sprig circle{opacity:1!important;animation:none!important}
+.skip .rule{animation:none!important}
+
+.reply{transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.gifts{transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.js .reply,.js .gifts{opacity:0;transform:translateY(26px)}
+.js .reply.in,.js .gifts.in{opacity:1;transform:none}
+
+/* ---------- cartão de resposta ---------- */
+.reply h2{text-align:center;margin-bottom:30px}
+.salute{font-style:italic;font-size:22px;margin-bottom:18px}
+.line{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin-top:16px}
+.line label{white-space:nowrap}
+
+input.hw,textarea.hw{
+  font-size:27px;line-height:1.25;background:transparent;border:0;border-radius:0;outline:0;
+  width:100%;min-width:0;padding:0 4px;-webkit-appearance:none;appearance:none;
+}
+input.hw{
+  flex:1 1 140px;border-bottom:1px solid var(--hair);
+  background:linear-gradient(var(--wine),var(--wine)) 0 100%/0 1.5px no-repeat;
+  transition:background-size .55s cubic-bezier(.3,.7,.2,1);
+}
+input.hw:focus{background-size:100% 1.5px}
+.hw::placeholder{font:italic 400 18px "EB Garamond",serif;color:rgba(42,35,32,.38)}
+textarea.hw{
+  display:block;resize:none;overflow:hidden;line-height:38px;min-height:114px;margin-top:4px;
+  background:repeating-linear-gradient(transparent 0 37px,var(--hair) 37px 38px) local;
+}
+textarea.hw::placeholder{line-height:38px}
+.err{display:block;flex-basis:100%;font-style:italic;font-size:16px;color:var(--wine);min-height:0}
+.err:empty{display:none}
+
+/* escolha: circulada à mão */
+.choice{display:flex;flex-direction:column;align-items:center;gap:6px;margin:30px 0 8px}
+.choice .ou{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft)}
+.opt{
+  position:relative;background:none;border:0;cursor:pointer;color:var(--ink);
+  font:italic 400 clamp(18px,5.3vw,22px)/1.2 "EB Garamond",serif;white-space:nowrap;
+  padding:12px 6px;transition:opacity .5s ease;-webkit-tap-highlight-color:transparent;
+}
+.opt svg{position:absolute;inset:0 -22px;width:calc(100% + 44px);height:100%;overflow:visible;pointer-events:none}
+.opt path{fill:none;stroke:var(--wine);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .75s cubic-bezier(.5,.1,.3,1)}
+.opt[aria-checked="true"] path{stroke-dashoffset:0}
+.opt span{position:relative}
+.opt span::after{content:"";position:absolute;left:-3%;right:-3%;top:56%;height:1px;background:var(--ink);transform:scaleX(0) rotate(-.8deg);transform-origin:left;transition:transform .5s ease}
+.choice.has .opt[aria-checked="false"]{opacity:.5}
+.choice.has .opt[aria-checked="false"] span::after{transform:scaleX(1) rotate(-.8deg)}
+.opt:focus-visible,.step button:focus-visible,.press:focus-visible{outline:1px dashed var(--wine);outline-offset:4px}
+
+/* só para quem vai */
+.fold{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s cubic-bezier(.3,.7,.2,1),opacity .6s ease;opacity:0}
+.fold.open{grid-template-rows:1fr;opacity:1}
+.fold > div{overflow:hidden}
+.step{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.step button{width:44px;height:44px;border-radius:50%;border:1px solid var(--hair);background:none;color:var(--ink);font:400 20px/1 "EB Garamond",serif;cursor:pointer;transition:border-color .3s,color .3s}
+.step button:hover{border-color:var(--wine);color:var(--wine)}
+.step button:disabled{opacity:.3;pointer-events:none}
+.step output{font-size:30px;line-height:1;min-width:1.1em;text-align:center;display:inline-block}
+.step output.bump{animation:bump .35s ease}
+@keyframes bump{40%{transform:translateY(-4px) rotate(-4deg)}}
+.seats{align-items:center;gap:8px 10px}
+#guests .line{animation:appear .6s ease both}
+
+.send{margin-top:38px;text-align:center}
+.press{
+  position:relative;overflow:hidden;cursor:pointer;background:none;border:1px solid var(--ink);color:var(--ink);
+  font:500 13px/1 "EB Garamond",serif;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap;padding:19px 22px 18px;border-radius:0;
+  transition:color .45s ease;isolation:isolate;display:inline-block;text-decoration:none;
+}
+.press::before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:transform .45s cubic-bezier(.3,.7,.2,1);z-index:-1}
+.press:hover,.press:active{color:var(--paper)}
+.press:hover::before,.press:active::before{transform:none}
+.press.solid{background:var(--wine);border-color:var(--wine);color:var(--paper)}
+.fine{font-size:15px;font-style:italic;color:var(--ink-soft);margin-top:16px}
+
+/* os dois caminhos principais, logo no convite */
+.acts{display:flex;flex-direction:column;gap:12px;width:100%;max-width:300px;margin-top:30px}
+.acts .press{text-align:center}
+
+.gifts{margin-top:22px;text-align:center;padding-top:clamp(42px,8vw,64px);padding-bottom:clamp(44px,8vw,66px)}
+.gifts-text{font-style:italic;max-width:22em;margin:14px auto 18px}
+
+/* lista como cardápio impresso: nome, pontilhado, valor */
+.ranges{display:flex;flex-wrap:wrap;justify-content:center;gap:0 26px;margin-bottom:18px}
+.ranges .opt{font-size:18px;padding:11px 2px}
+.glist{list-style:none;text-align:left}
+.gift-row{display:flex;align-items:baseline;gap:8px;width:100%;background:none;border:0;border-radius:0;padding:12px 0;font:inherit;color:inherit;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:color .3s}
+.gift-row .dots{flex:1 1 18px;min-width:18px;border-bottom:1px dotted rgba(42,35,32,.45);transform:translateY(-5px)}
+.gift-row .v{white-space:nowrap}
+.gift-row:hover,.gift.open .gift-row{color:var(--wine)}
+.gift-row:focus-visible{outline:1px dashed var(--wine);outline-offset:2px}
+.gift-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s cubic-bezier(.3,.7,.2,1)}
+.gift.open .gift-panel{grid-template-rows:1fr}
+.gift-panel > div{overflow:hidden}
+.pix{text-align:center;padding:10px 0 30px;border-bottom:1px solid var(--hair);margin-bottom:8px}
+.pix-steps{list-style:none;counter-reset:passo;text-align:left;font-size:18px;line-height:1.45;max-width:19em;margin:20px auto 16px}
+.pix-steps li{counter-increment:passo;position:relative;padding-left:1.7em;margin-top:8px}
+.pix-steps li::before{content:counter(passo) ".";position:absolute;left:0;font-style:italic;color:var(--wine)}
+.pix-qr{width:170px;margin:6px auto 4px}
+.pix-qr svg{display:block;width:100%;height:auto}
+.pix-code{display:block;width:100%;margin-top:14px;font:14px/1.4 ui-monospace,Consolas,monospace;color:var(--ink);background:transparent;border:1px solid var(--hair);padding:10px;resize:none;word-break:break-all}
+.pix p{margin-top:14px}
+.pix .fine a{color:inherit}
+#gmore{display:block;margin:14px auto 0}
+
+/* ---------- depois de enviar ---------- */
+#form{transition:opacity .45s ease}
+#form.gone{opacity:0}
+#done{text-align:center}
+.seal{display:block;margin:0 auto 22px;filter:drop-shadow(0 3px 3px rgba(50,8,14,.4));transform:rotate(7deg)}
+.seal.stamp{animation:stamp .7s cubic-bezier(.2,1.2,.3,1) both}
+@keyframes stamp{0%{opacity:0;transform:scale(2.5) rotate(-16deg)}55%{opacity:1;transform:scale(.93) rotate(9deg)}100%{transform:scale(1) rotate(7deg)}}
+.reply.thud{animation:thud .35s ease .28s}
+@keyframes thud{35%{transform:translateY(3px)}}
+#done .script{font-size:clamp(54px,14vw,78px);line-height:1;margin:6px 0 18px}
+#done .hw{font-size:1.32em;line-height:1}
+.links{margin-top:30px;display:flex;flex-direction:column;align-items:center;gap:12px;font-size:18px}
+.edit{font:italic 400 18px "EB Garamond",serif;color:var(--ink-soft);background:none;border:0;cursor:pointer;padding:8px}
+#d-deliver{margin-top:30px}
+#d-deliver .edit{display:block;margin:10px auto 0}
+.foot{max-width:620px;margin:26px auto 0;text-align:center;font-size:16px;font-style:italic;color:rgba(246,240,228,.7)}
+.foot a{color:inherit}
+
+[hidden]{display:none!important}
+
+@media (min-width:600px){
+  body{padding:38px 20px 70px}
+  .invite{min-height:0;padding-top:96px;padding-bottom:84px}
+  .choice{flex-direction:row;justify-content:center;gap:26px}
+  .links{flex-direction:row;justify-content:center;gap:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rise,.js .reply,.js .gifts{opacity:1;transform:none}
+  .js .names .name{clip-path:none}
+  .js .sprig path{stroke-dashoffset:0}.js .sprig circle{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================= CONVITE ======================= -->
+<article class="sheet invite">
+  <svg class="sprig" viewBox="0 0 200 64" aria-hidden="true">
+    <g>
+      <path pathLength="1" style="--d:.1s" d="M100 54 C124 52 152 42 181 19"/>
+      <path pathLength="1" style="--d:.5s" d="M121 51 C121 40 129 33 138 32 C138 42 132 49 121 51"/>
+      <path pathLength="1" style="--d:.65s" d="M130 49 C136 57 147 59 155 55 C150 48 139 45 130 49"/>
+      <path pathLength="1" style="--d:.8s" d="M142 45 C143 34 151 27 160 26 C159 37 153 43 142 45"/>
+      <path pathLength="1" style="--d:.95s" d="M151 41 C158 48 168 48 175 44 C169 38 159 36 151 41"/>
+      <path pathLength="1" style="--d:1.1s" d="M162 34 C165 24 173 19 182 18 C180 27 173 33 162 34"/>
+    </g>
+    <g transform="translate(200 0) scale(-1 1)">
+      <path pathLength="1" style="--d:.1s" d="M100 54 C124 52 152 42 181 19"/>
+      <path pathLength="1" style="--d:.5s" d="M121 51 C121 40 129 33 138 32 C138 42 132 49 121 51"/>
+      <path pathLength="1" style="--d:.65s" d="M130 49 C136 57 147 59 155 55 C150 48 139 45 130 49"/>
+      <path pathLength="1" style="--d:.8s" d="M142 45 C143 34 151 27 160 26 C159 37 153 43 142 45"/>
+      <path pathLength="1" style="--d:.95s" d="M151 41 C158 48 168 48 175 44 C169 38 159 36 151 41"/>
+      <path pathLength="1" style="--d:1.1s" d="M162 34 C165 24 173 19 182 18 C180 27 173 33 162 34"/>
+    </g>
+    <circle cx="100" cy="54" r="1.7"/>
+  </svg>
+
+  <p class="caps rise" style="--d:.5s">Com alegria</p>
+  <h1 class="names script">
+    <span class="name" style="--d:.7s">Luana</span>
+    <span class="e rise" style="--d:1.5s">e</span>
+    <span class="name" style="--d:1.6s">Adriano</span>
+  </h1>
+  <p class="caps rise" style="--d:2.5s">convidam para<br>o seu casamento</p>
+  <p class="when rise" style="--d:2.7s">sábado, nove de janeiro<br>de dois mil e vinte e sete,<br>às quinze horas</p>
+
+  <div class="rule" style="--d:2.9s"></div>
+
+  <p class="place rise" style="--d:3s">
+    <a class="where" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Comunidade+Nossa+Senhora+Aparecida+Vila+Nova+Curu%C3%A7%C3%A1+S%C3%A3o+Paulo">
+      <span>Comunidade Nossa Senhora Aparecida</span>
+      <small>Vila Nova Curuçá · São Paulo · abrir no mapa</small>
+    </a>
+  </p>
+  <p class="place rise" style="--d:3.15s;margin-top:10px">
+    <a class="where" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Buffet+Rosa+de+Saron+S%C3%A3o+Paulo">
+      <small>recepção em seguida no</small>
+      <span>Buffet Rosa de Saron</span>
+      <small>abrir no mapa</small>
+    </a>
+  </p>
+
+  <p class="count rise" style="--d:3.3s" id="count"></p>
+
+  <div class="acts rise" style="--d:3.5s">
+    <a class="press solid" href="#rsvp">Confirme sua presença</a>
+    <a class="press" href="#presentes">Lista de presentes</a>
+  </div>
+</article>
+
+<!-- ======================= RESPOSTA ======================= -->
+<section class="sheet reply" id="rsvp">
+
+  <form id="form" novalidate>
+    <h2 class="caps">Confirme sua presença</h2>
+    <p class="salute">Queridos Luana e Adriano,</p>
+
+    <p class="line">
+      <label for="nome">eu,</label>
+      <input class="hw" id="nome" autocomplete="name" autocapitalize="words" enterkeyhint="next" maxlength="80" placeholder="seu nome completo">
+      <span class="err" id="e-nome" role="alert"></span>
+    </p>
+
+    <div class="choice" id="choice" role="radiogroup" aria-label="Presença">
+      <button type="button" class="opt" role="radio" aria-checked="false" data-v="sim">
+        <svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M16 34 C8 14 58 4 104 5 C152 6 194 14 192 31 C190 50 142 57 96 56 C48 55 4 50 12 24"/></svg>
+        <span>confirmo presença com alegria</span>
+      </button>
+      <span class="ou">ou</span>
+      <button type="button" class="opt" role="radio" aria-checked="false" data-v="nao">
+        <svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M20 30 C14 12 62 5 108 6 C154 7 195 16 191 33 C187 51 138 56 92 55 C46 54 6 47 15 22"/></svg>
+        <span>infelizmente não poderei ir</span>
+      </button>
+    </div>
+    <span class="err" id="e-vai" role="alert" style="text-align:center"></span>
+
+    <div class="fold" id="fold"><div>
+      <p class="line seats">
+        <span>Guardem lugar para</span>
+        <span class="step"><button type="button" data-k="adultos" data-d="-1" aria-label="menos um adulto">−</button><output class="hw" id="adultos">1</output><button type="button" data-k="adultos" data-d="1" aria-label="mais um adulto">+</button></span>
+        <span id="w-ad">adulto</span>
+        <span>e</span>
+        <span class="step"><button type="button" data-k="criancas" data-d="-1" aria-label="menos uma criança">−</button><output class="hw" id="criancas">0</output><button type="button" data-k="criancas" data-d="1" aria-label="mais uma criança">+</button></span>
+        <span id="w-cr">crianças.</span>
+      </p>
+      <div id="guests"></div>
+      <span class="err" id="e-guests" role="alert"></span>
+    </div></div>
+
+    <p class="line" id="tel-line" hidden>
+      <label for="tel">Meu WhatsApp é</label>
+      <input class="hw" id="tel" style="flex-basis:190px" inputmode="tel" enterkeyhint="next" autocomplete="tel" maxlength="16" placeholder="(11) 99999-9999">
+      <span class="err" id="e-tel" role="alert"></span>
+    </p>
+
+    <p class="line" style="margin-top:26px"><label for="recado">Um recado para vocês:</label></p>
+    <textarea class="hw" id="recado" maxlength="500" rows="3"></textarea>
+
+    <div class="send">
+      <button class="press" type="submit">Selar resposta</button>
+      <p class="fine" id="fine">Usado só pelos noivos, para organizar a festa.</p>
+    </div>
+  </form>
+
+  <div id="done" hidden>
+    <svg class="seal" id="seal" viewBox="0 0 120 120" width="116" height="116" aria-hidden="true">
+      <defs>
+        <filter id="wax" x="-20%" y="-20%" width="140%" height="140%">
+          <feTurbulence type="fractalNoise" baseFrequency=".034" numOctaves="2" seed="11" result="t"/>
+          <feDisplacementMap in="SourceGraphic" in2="t" scale="10"/>
+        </filter>
+        <radialGradient id="waxg" cx="36%" cy="30%" r="78%">
+          <stop offset="0" stop-color="#a93545"/><stop offset=".5" stop-color="#7b1e2b"/><stop offset="1" stop-color="#541018"/>
+        </radialGradient>
+      </defs>
+      <g filter="url(#wax)"><circle cx="60" cy="60" r="47" fill="url(#waxg)"/></g>
+      <circle cx="60.9" cy="60.9" r="35" fill="none" stroke="#e08a95" stroke-opacity=".35" stroke-width=".9"/>
+      <circle cx="60" cy="60" r="35" fill="none" stroke="#450b12" stroke-opacity=".6" stroke-width="1.2"/>
+      <text x="60.8" y="71.8" text-anchor="middle" font-family="Pinyon Script" font-size="31" fill="#e08a95" fill-opacity=".35">L&amp;A</text>
+      <text x="60" y="71" text-anchor="middle" font-family="Pinyon Script" font-size="31" fill="#450b12" fill-opacity=".8">L&amp;A</text>
+    </svg>
+    <p class="caps" id="d-caps">Recebido</p>
+    <p class="script" id="d-title">Até lá</p>
+    <p id="d-text"></p>
+    <div id="d-deliver" hidden>
+      <a class="press" id="d-send" target="_blank" rel="noopener" href="#">Enviar pelo WhatsApp</a>
+      <p class="fine">A mensagem já abre escrita. É só tocar em enviar.</p>
+      <button type="button" class="edit">corrigir resposta</button>
+    </div>
+    <div class="links" id="d-links">
+      <a class="ln" id="d-ics" href="#">Guardar na agenda</a>
+      <a class="ln" href="#presentes">Lista de presentes</a>
+      <a class="ln" id="d-wa" target="_blank" rel="noopener" href="#">Enviar de novo pelo WhatsApp</a>
+      <button type="button" class="edit">corrigir resposta</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PRESENTES ======================= -->
+<section class="sheet gifts" id="presentes">
+  <h2 class="caps">Lista de presentes</h2>
+  <p class="gifts-text">Para nos presentear, escolha qualquer item da nossa lista. Fiquem à vontade!</p>
+  <div class="ranges" id="ranges" role="radiogroup" aria-label="Faixa de valor"></div>
+  <ul class="glist" id="glist"></ul>
+  <button type="button" class="edit" id="gmore" hidden></button>
+  <noscript><a class="press solid" href="https://noivos.casar.com/luana-e-adriano-2027-01-09?intro=0#presentes">Abrir lista de presentes</a></noscript>
+</section>
+
+<footer class="foot">
+  <a href="https://noivos.casar.com/luana-e-adriano-2027-01-09?intro=0#osnoivos" target="_blank" rel="noopener">A história do casal</a>
+</footer>
+
+<script>
+/* ============================ CONFIGURAÇÃO ============================
+   whatsapp  número dos noivos com DDI + DDD, só dígitos. Ex.: "5511999999999"
+             (vazio = o WhatsApp abre e o convidado escolhe para quem enviar)
+   endpoint  opcional: URL que recebe a resposta em JSON por POST
+             (ex.: Google Apps Script gravando numa planilha). Com endpoint,
+             o envio é silencioso e o WhatsApp vira só um link extra. */
+/* pix       recebedor dos presentes. Enquanto a chave estiver vazia, o botão de cada
+             presente leva para a lista do Casar.com.
+             chave   celular "+5511999999999" · CPF só dígitos · e-mail · ou chave aleatória
+             nome    nome do titular como aparece no banco (até 25 letras)
+             cidade  cidade do titular (até 15 letras)
+             Antes de divulgar, façam um Pix de teste de R$ 1 para conferir o nome. */
+const CONFIG = {
+  whatsapp: "",
+  endpoint: "",
+  pix: { chave: "", nome: "", cidade: "Sao Paulo" },
+  inicioUTC: "2027-01-09T18:00:00Z"   // 15h em São Paulo
+};
+
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const KEY = "rsvp-luana-adriano";
+
+/* ---------- entrada: espera as fontes para a caligrafia não piscar ---------- */
+const ready = () => { document.body.classList.add("ready"); try { sessionStorage.setItem("visto", "1"); } catch {} };
+const pular = () => document.documentElement.classList.add("skip");
+["wheel", "touchmove"].forEach(ev => addEventListener(ev, pular, { once: true, passive: true }));
+(document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1800))]) : Promise.resolve()).then(ready);
+
+const reply = $("#rsvp");
+const tardios = [reply, $("#presentes")];
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .08 });
+  tardios.forEach(t => io.observe(t));
+} else tardios.forEach(t => t.classList.add("in"));
+
+/* ---------- contagem por extenso ---------- */
+function extenso(n){
+  const u = ["zero","um","dois","três","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","quatorze","quinze","dezesseis","dezessete","dezoito","dezenove"];
+  const d = ["","","vinte","trinta","quarenta","cinquenta","sessenta","setenta","oitenta","noventa"];
+  const c = ["","cento","duzentos","trezentos","quatrocentos","quinhentos","seiscentos","setecentos","oitocentos","novecentos"];
+  if (n === 100) return "cem";
+  const p = [];
+  if (n >= 100) { p.push(c[Math.floor(n/100)]); n %= 100; }
+  if (n >= 20)  { p.push(d[Math.floor(n/10)]); n %= 10; if (n) p.push(u[n]); }
+  else if (n > 0 || !p.length) p.push(u[n]);
+  return p.join(" e ");
+}
+(function contagem(){
+  const ms = new Date(CONFIG.inicioUTC) - Date.now(), dias = Math.floor(ms / 864e5);
+  $("#count").textContent =
+    ms <= 0 ? "" :
+    dias > 999 ? `faltam ${dias} dias` :
+    dias > 1 ? `faltam ${extenso(dias)} dias` :
+    dias === 1 ? "falta um dia" : "é amanhã";
+  setTimeout(contagem, 60000);
+})();
+
+/* ---------- estado ---------- */
+const st = { nome:"", vai:"", adultos:1, criancas:0, acomp:[], tel:"", recado:"", enviado:false };
+const ler = k => { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch { return null; } };
+const gravar = (k, v) => { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+const salvo = ler(KEY);                 // resposta já selada neste aparelho
+Object.assign(st, salvo || ler(KEY + "-rascunho") || {});   // ou o que a pessoa estava escrevendo
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c]));
+const primeiro = () => st.nome.split(" ")[0];
+
+/* ---------- presença: circula uma, risca a outra ---------- */
+function marcar(v){
+  st.vai = v;
+  $$(".opt").forEach(o => o.setAttribute("aria-checked", String(o.dataset.v === v)));
+  $("#choice").classList.toggle("has", !!v);
+  $("#fold").classList.toggle("open", v === "sim");
+  $("#e-vai").textContent = "";
+}
+$$(".opt").forEach(o => o.addEventListener("click", () => marcar(o.dataset.v)));
+
+/* ---------- lugares e acompanhantes ---------- */
+function lerAcomp(){ const i = $$("#guests input"); if (i.length) st.acomp = i.map(x => x.value.trim()); }
+function lugares(animar){
+  $("#adultos").value = st.adultos; $("#criancas").value = st.criancas;
+  $("#w-ad").textContent = st.adultos === 1 ? "adulto" : "adultos";
+  $("#w-cr").textContent = st.criancas === 1 ? "criança." : "crianças.";
+  $$(".step button").forEach(b => { if (b.dataset.d === "-1") b.disabled = st[b.dataset.k] <= (b.dataset.k === "adultos" ? 1 : 0); else b.disabled = st[b.dataset.k] >= 9; });
+  const rot = [];
+  for (let i = 1; i < st.adultos; i++) rot.push("nome do acompanhante");
+  for (let i = 0; i < st.criancas; i++) rot.push("nome da criança");
+  const atual = $$("#guests input").length;
+  st.acomp = st.acomp.slice(0, rot.length);
+  $("#guests").innerHTML = rot.map((ph, i) =>
+    `<p class="line"${i < atual || !animar ? ' style="animation:none"' : ""}><label for="g${i}">${i === 0 ? "Comigo vêm" : "e"}</label><input class="hw" id="g${i}" maxlength="80" autocapitalize="words" enterkeyhint="next" placeholder="${ph}" value="${esc(st.acomp[i] || "")}"></p>`).join("");
+}
+$$(".step button").forEach(b => b.addEventListener("click", () => {
+  lerAcomp();
+  const k = b.dataset.k;
+  st[k] = Math.max(k === "adultos" ? 1 : 0, Math.min(9, st[k] + Number(b.dataset.d)));
+  lugares(true);
+  const o = $("#" + k); o.classList.remove("bump"); void o.offsetWidth; o.classList.add("bump");
+}));
+
+/* ---------- telefone e recado ---------- */
+$("#tel").addEventListener("input", e => {
+  const v = e.target.value.replace(/\D/g, "").slice(0, 11);
+  e.target.value =
+    v.length > 10 ? `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}` :
+    v.length > 6  ? `(${v.slice(0,2)}) ${v.slice(2,6)}-${v.slice(6)}` :
+    v.length > 2  ? `(${v.slice(0,2)}) ${v.slice(2)}` : v.length ? `(${v}` : "";
+});
+const recado = $("#recado");
+const crescer = () => { recado.style.height = "auto"; recado.style.height = Math.max(114, Math.ceil(recado.scrollHeight / 38) * 38) + "px"; };
+recado.addEventListener("input", crescer);
+
+/* ---------- envio ---------- */
+function validar(){
+  st.nome = $("#nome").value.trim().replace(/\s+/g, " ");
+  st.tel = $("#tel").value; st.recado = recado.value.trim(); lerAcomp();
+  const erros = [
+    ["#e-nome", "#nome", st.nome.split(" ").length < 2 ? "falta o nome completo" : ""],
+    ["#e-vai", ".opt", st.vai ? "" : "circule uma das opções acima"],
+    ["#e-guests", "#guests input", st.vai === "sim" && st.acomp.some(n => !n) ? "escreva o nome de cada pessoa que vem com você" : ""],
+    ["#e-tel", "#tel", CONFIG.endpoint && st.tel.replace(/\D/g, "").length < 10 ? "um número com DDD, por favor" : ""]
+  ];
+  let alvo = null;
+  erros.forEach(([e, campo, msg]) => { $(e).textContent = msg; if (msg && !alvo) alvo = $(campo); });
+  if (alvo) { alvo.scrollIntoView({ block: "center", behavior: "smooth" }); alvo.focus({ preventScroll: true }); }
+  return !alvo;
+}
+function mensagem(){
+  const l = ["RSVP — Luana e Adriano, 09/01/2027", "", `Nome: ${st.nome}`, `Presença: ${st.vai === "sim" ? "confirmada" : "não poderá ir"}`];
+  if (st.vai === "sim") {
+    l.push(`Adultos: ${st.adultos} | Crianças: ${st.criancas}`);
+    if (st.acomp.length) l.push(`Vêm junto: ${st.acomp.join(", ")}`);
+  }
+  if (st.tel) l.push(`WhatsApp: ${st.tel}`);
+  if (st.recado) l.push("", `"${st.recado}"`);
+  return l.join("\n");
+}
+const linkWa = () => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(mensagem())}`;
+
+$("#form").addEventListener("submit", e => {
+  e.preventDefault();
+  if (!validar()) return;
+  if (st.vai !== "sim") { st.adultos = 1; st.criancas = 0; st.acomp = []; }
+  st.enviado = false;
+  gravar(KEY, st); gravar(KEY + "-rascunho", null);
+  if (CONFIG.endpoint) {
+    fetch(CONFIG.endpoint, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ ...st, enviadoEm: new Date().toISOString() }) }).catch(() => {});
+  }
+  $("#form").classList.add("gone");
+  setTimeout(() => recebido(true), 450);
+});
+
+/* Sem endpoint, a entrega é pelo WhatsApp do próprio convidado. O toque precisa ser
+   num link de verdade (é o que abre o app com segurança em qualquer celular), então
+   primeiro o cartão é selado e só depois aparece o botão de enviar. */
+function recebido(lacrar){
+  const sim = st.vai === "sim", n = st.adultos + st.criancas;
+  const entregue = !!CONFIG.endpoint || st.enviado;
+  $("#form").hidden = true; $("#done").hidden = false;
+  $("#d-caps").textContent = entregue ? "Recebido" : "Selado";
+  $("#d-title").textContent = !entregue ? "Falta um toque" : sim ? "Até lá" : "Com carinho";
+  $("#d-text").innerHTML = !entregue
+    ? `Sua resposta está pronta, <span class="hw">${esc(primeiro())}</span>.<br>Agora é só entregar aos noivos.`
+    : sim
+    ? `Lugar guardado para <span class="hw">${n === 1 ? "uma pessoa" : n === 2 ? "duas pessoas" : extenso(n).replace(/dois$/, "duas") + " pessoas"}</span>,<br>em nome de <span class="hw">${esc(st.nome)}</span>.`
+    : `Sentiremos sua falta, <span class="hw">${esc(primeiro())}</span>.<br>Obrigado por avisar.`;
+  $("#d-deliver").hidden = entregue; $("#d-links").hidden = !entregue;
+  $("#d-send").href = linkWa();
+  $("#d-ics").hidden = !sim;
+  $("#d-wa").href = linkWa();
+  $("#d-wa").textContent = CONFIG.endpoint ? "Avisar também pelo WhatsApp" : "Enviar de novo pelo WhatsApp";
+  if (lacrar) {
+    $("#seal").classList.remove("stamp"); void $("#seal").offsetWidth; $("#seal").classList.add("stamp");
+    reply.classList.remove("thud"); void reply.offsetWidth; reply.classList.add("thud");
+    reply.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+}
+
+$("#d-send").addEventListener("click", () => {
+  st.enviado = true; gravar(KEY, st);
+  setTimeout(() => recebido(false), 900);   // quando a pessoa voltar do WhatsApp, já vê o "Até lá"
+});
+
+$$(".edit").forEach(b => b.addEventListener("click", () => {
+  $("#done").hidden = true; $("#form").hidden = false; $("#form").classList.remove("gone");
+  preencher(); $("#nome").focus();
+}));
+
+function preencher(){
+  $("#nome").value = st.nome; $("#tel").value = st.tel; recado.value = st.recado;
+  marcar(st.vai); lugares(false); crescer();
+}
+
+/* ---------- agenda (.ics) ---------- */
+$("#d-ics").addEventListener("click", e => {
+  e.preventDefault();
+  const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Luana e Adriano//RSVP//PT", "BEGIN:VEVENT",
+    "UID:casamento-luana-adriano-20270109",
+    "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z",
+    "DTSTART:20270109T180000Z", "DTEND:20270109T230000Z",
+    "SUMMARY:Casamento de Luana e Adriano",
+    "LOCATION:Comunidade Nossa Senhora Aparecida\\, Vila Nova Curuçá\\, São Paulo - SP",
+    "DESCRIPTION:Cerimônia às 15h. Recepção em seguida no Buffet Rosa de Saron.",
+    "BEGIN:VALARM", "TRIGGER:-P1D", "ACTION:DISPLAY", "DESCRIPTION:Amanhã: casamento de Luana e Adriano", "END:VALARM",
+    "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+  a.download = "casamento-luana-e-adriano.ics"; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+});
+
+/* ============================ LISTA DE PRESENTES ============================ */
+const PRESENTES = [
+["2 ingressos para um show",425.92],
+["2 massagens relaxantes no spa do hotel",532.4],
+["2 Passagens Aéreas para a Lua de Mel",1996.5],
+["2 passagens de trem panorâmico",59.29],
+["2 passagens de trem por diversos países",399.3],
+["Água de coco na praia",133.1],
+["Ajuda financeira para o futuro do casal",447.7],
+["Ajuda para Lua de Mel em Campos do Jordão",250],
+["Ajuda para passeio Bar de Gelo em Campos do Jordão",240],
+["Ajudinha para pagar a alimentação na lua de mel",907.5],
+["Almoço em restaurante de Sukyiaki em Osaka",266.2],
+["Almoço em São Miguel dos Milagres",306.13],
+["Almoço na praia",239.58],
+["Almoço no Ferraros Bar e Ristorante",372.68],
+["Almoço para o casal",166.38],
+["Aluguel de bicicletas para passeio na praia",133.1],
+["Aluguel de bikes para pedalar na praia Maragogi",133.1],
+["Aluguel de carro",266.2],
+["Aluguel de carro no destino da lua de mel",1028.5],
+["Aparelho de Fondue Brinox",146.41],
+["Aparelho de Fondue Preto",146.41],
+["Aparelho de Jantar",286.17],
+["Aparelho de Jantar Branco - 30 Peças",760],
+["Aparelho de Jantar e Taças Duralex Opaline",146.41],
+["Aparelho para fondue",131.77],
+["Aspirador de pó",239.58],
+["Aspirador de Pó Vertical",232.93],
+["Assadeira",99.22],
+["Assadeira de bolo",119.79],
+["Batedor de ovos",36.3],
+["Beach tour (8 praias no litoral de Maragogi)",1064.8],
+["Café da manhã durante a lua de mel",278.3],
+["Café da manhã privativo no quarto",173.03],
+["Café da manhã privativo no quarto",146.41],
+["Café da manhã romântico no quarto",239.58],
+["Café da tarde no pôr do sol",146.41],
+["Caipirinhas na piscina",84.7],
+["Centrifuga de Suco com Jarra",385.99],
+["Cesto Retrátil para Roupas FlashLimp",54.45],
+["Chaleira Elétrica",133.1],
+["Champanhe no quarto para brindar a lua de mel",186.34],
+["Champanhe para brincar o pôr do sol",119.79],
+["Coifa de Parede",878.46],
+["Colcha Casal Santista Boutis Dinis",239.58],
+["Colcha Dupla Face Casal Camesa",146.41],
+["Combo de Passeio pelo RJ",1331],
+["Conjunto de Bowl em Cerâmica - 6 peças",87.12],
+["Conjunto de Copos Long Drink Nadir Opera 360 ml",42.35],
+["Conjunto de Copos para Cerveja e Garrafa",312.07],
+["Conjunto de descascador de alimentos",96.68],
+["Conjunto de facas",116.16],
+["Conjunto de Facas Euro Home Colorstone",177.02],
+["Conjunto de Panelas 10 Peças Tramontina",310.44],
+["Conjunto de Panelas 7 Peças Rochedo",352.7],
+["Conjunto de peneiras",199.65],
+["Conjunto de Potes Herméticos Redondos 4 peças",131.77],
+["Conjunto de Potes Herméticos Redondos Electrolux",60.5],
+["Conjunto de potes para alimentos",82.28],
+["Conjunto para Petiscos em Porcelana e Bambu Turim com 6 peças",419.27],
+["Conjunto Porta-Frios Vision (3 peças)",96.8],
+["Contribuição em dinheiro",133.1],
+["Contribuição em dinheiro para a lua de mel",226.27],
+["Contribuição para os passeios durante a viagem",786.5],
+["Contribuição para um hotel 5 estrelas na lua de mel",338.8],
+["Cortador de pizza",37.51],
+["Cortador de Pizza com Cabo de Bambu",75.02],
+["Cota #01",60.5],
+["Cota #02",133.1],
+["Cota #03",266.2],
+["Cota #04",332.75],
+["Cota #07",532.4],
+["Cota Jantar Romântico para o Casal",279.51],
+["Cota para café da manhã",60.5],
+["Cota para garantir restaurantes de luxo na viagem",580.8],
+["Cota passagem aérea 01",1331],
+["Depurador de Ar Colormaq",252.89],
+["Diária no hotel",332.75],
+["Drinks diversos para happy hour na praia",119.79],
+["Drinks exóticos na piscina do hotel",84.7],
+["Drinks exóticos na piscina do hotel",133.1],
+["Drinks na maravilhosa piscina do hotel One&Only",133.1],
+["Drinks na piscina",133.1],
+["Drinks na piscina",90.75],
+["Drinks na piscina",78.65],
+["Drinks na piscina",252.89],
+["Drinks na piscina do hotel",119.79],
+["Drinks na praia",133.1],
+["Echo Dot Smart Speaker Amazon com Alexa",532.4],
+["Edredom color",378],
+["Ensaio fotográfico",1597.2],
+["Espirro em Paris (projeto lua de mel) ♥",60.5],
+["Excursão a Búzios",732.05],
+["Excursão de jipe pela Floresta da Tijuca",798.6],
+["Excursão para Angra dos Reis",705.43],
+["Excursão para Arraial do Cabo",931.7],
+["Faqueiro",158.39],
+["Faqueiro - 42 Peças",344.73],
+["Fechadura Digital - Intelbras",598.95],
+["Home Theater Wireless",705.43],
+["Hospedagem para o casal",1197.9],
+["Hospedagem praiana",532.4],
+["Hospedagem Armani Hotel - 2 noites",1331],
+["Jantar em Paraty",250],
+["Jantar em Ubatuba",250],
+["Jantar para o casal",359.37],
+["Jantar romântico",266.2],
+["Jogo de Banho Buddemeyer",239.58],
+["Jogo de Cama Listrado",173.03],
+["Jogo de copos - Tool Box",246.24],
+["Jogo de Facas com Suporte em Madeira - 7 peças",472.51],
+["Jogo de Lençol Casal New Soft 4 peças - Home Stye",206.31],
+["Jogo de Panelas Preto - 5 Peças",918.39],
+["Jogo de Refresco Stripes 7 Peças 270 ML",118.46],
+["Jogo de Taças de Cristal - 6 Peças",198.32],
+["Jogo de toalha banho",131.77],
+["Jogo Edredom Casal Cinza - 3 Peças",598.95],
+["Jogo Toalha de Banho Azul - 4 Peças",146.41],
+["Kit ressaca para os noivos",292.82],
+["Lava louças",2117.5],
+["Manta",72.6],
+["Máquina de Café Expresso",432.58],
+["Microondas 30 Litros Branco",552.37],
+["Mop",96.8],
+["Noite de cinema + jantar",252.89],
+["Noite de fondue",133.1],
+["Panela Elétrica",429.91],
+["Passeio de barco",332.75],
+["Passeio de buggy",532.4],
+["Passeio de Escuna em Paraty",220],
+["Passeio de Escuna em Ubatuba",220],
+["Passeio no parque",72.6],
+["Passeio pela Vila de Maragogi",306.13],
+["Pipoqueira Elétrica sem Óleo",239.58],
+["Processador de Alimentos Preto - 800W",415.26],
+["PS4",2793.77],
+["Rolê de quadriciclo em Campos de Jordan",250],
+["Roupão para o casal",312.79],
+["Smart TV LED 40 Polegadas",1796.85],
+["Travesseiros",81.07],
+["TV LED 32\"",1331],
+["Vale Passeio de Barco",332.75],
+["Vale Sessão de Massagem para o Casal",419.27],
+["Vaporizador de Roupas Arno",613.59],
+["Vaquinha #01",60.5],
+["Vaquinha #03",199.65]
+];
+const CASAR = "https://noivos.casar.com/luana-e-adriano-2027-01-09?intro=0#presentes";
+const FAIXAS = [["até R$ 100", 0, 100], ["R$ 100 a 300", 100, 300], ["R$ 300 a 600", 300, 600], ["mais de R$ 600", 600, Infinity]];
+const ARO = "M16 34 C8 14 58 4 104 5 C152 6 194 14 192 31 C190 50 142 57 96 56 C48 55 4 50 12 24";
+const brl = v => "R$ " + v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const pres = PRESENTES.map(([nome, valor], i) => ({ nome, valor, i }));
+let faixa = -1, tudo = false;
+
+/* ----- Pix "copia e cola" (BR Code estático, padrão do Banco Central) ----- */
+const tlv = (id, v) => id + String(v.length).padStart(2, "0") + v;
+const semAcento = (s, n) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9 ]/g, " ").replace(/\s+/g, " ").trim().slice(0, n);
+function crc16(s){
+  let c = 0xFFFF;
+  for (let i = 0; i < s.length; i++) {
+    c ^= s.charCodeAt(i) << 8;
+    for (let b = 0; b < 8; b++) c = c & 0x8000 ? ((c << 1) ^ 0x1021) & 0xFFFF : (c << 1) & 0xFFFF;
+  }
+  return c.toString(16).toUpperCase().padStart(4, "0");
+}
+function codigoPix(valor, descricao){
+  let conta = tlv("00", "br.gov.bcb.pix") + tlv("01", CONFIG.pix.chave.trim());
+  const d = semAcento(descricao || "", Math.min(40, 99 - conta.length - 4));   // o campo inteiro cabe em 99
+  if (d) conta += tlv("02", d);
+  let p = tlv("00", "01") + tlv("26", conta) + tlv("52", "0000") + tlv("53", "986");
+  if (valor) p += tlv("54", valor.toFixed(2));
+  p += tlv("58", "BR") + tlv("59", semAcento(CONFIG.pix.nome, 25) || "NOIVOS") + tlv("60", semAcento(CONFIG.pix.cidade, 15) || "SAO PAULO") + tlv("62", tlv("05", "***")) + "6304";
+  return p + crc16(p);
+}
+
+function listar(){
+  let itens = faixa < 0 ? pres : pres.filter(p => p.valor >= FAIXAS[faixa][1] && p.valor < FAIXAS[faixa][2]).sort((a, b) => a.valor - b.valor);
+  const total = itens.length;
+  if (!tudo) itens = itens.slice(0, 12);
+  const linha = (i, nome, valor) => `<li class="gift" data-i="${i}"><button type="button" class="gift-row" aria-expanded="false"><span class="n">${esc(nome)}</span><span class="dots"></span><span class="v">${valor}</span></button><div class="gift-panel"><div></div></div></li>`;
+  $("#glist").innerHTML = linha(-1, "Valor livre", "você escolhe") + itens.map(p => linha(p.i, p.nome, brl(p.valor))).join("");
+  $("#gmore").hidden = tudo || total <= 12;
+  $("#gmore").textContent = `ver todos os ${total} presentes`;
+}
+
+function painel(p){
+  const nome = p ? p.nome : "Valor livre", valor = p ? p.valor : 0;
+  if (!CONFIG.pix.chave.trim())
+    return `<div class="pix"><a class="press solid" target="_blank" rel="noopener" href="${CASAR}">Presentear pelo Casar.com</a></div>`;
+  const cod = codigoPix(valor, nome);
+  const aviso = `https://wa.me/${CONFIG.whatsapp}?text=` + encodeURIComponent(`Presenteei vocês com "${nome}"${valor ? " (" + brl(valor) + ")" : ""} pelo Pix. Com carinho${st.nome ? ", " + st.nome.trim() : ""}.`);
+  return `<div class="pix">
+    <button type="button" class="press solid" data-copy="${esc(cod)}">Copiar código Pix</button>
+    <ol class="pix-steps">
+      <li>Toque em “Copiar código Pix”.</li>
+      <li>No app do seu banco, entre em Pix e escolha “Pix copia e cola”.</li>
+      <li>Cole o código e confira: <em>${esc(CONFIG.pix.nome)}</em>${valor ? ", " + brl(valor) : ", com o valor que você quiser"}.</li>
+    </ol>
+    <div class="pix-qr" data-qr="${esc(cod)}" hidden></div>
+    <button type="button" class="edit" data-verqr>mostrar QR code</button>
+    <p><a class="ln" target="_blank" rel="noopener" href="${aviso}">Avisar os noivos pelo WhatsApp</a></p>
+    <p class="fine"><a target="_blank" rel="noopener" href="${CASAR}">Prefere cartão? Pagar pelo Casar.com</a>, com a taxa do site.</p>
+  </div>`;
+}
+
+/* QR code: só carrega a biblioteca quando alguém pede; sem ela, o copia e cola continua valendo */
+let bibQR;
+const carregarQR = () => bibQR || (bibQR = new Promise((ok, erro) => {
+  const s = document.createElement("script");
+  s.src = "https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";
+  s.onload = ok; s.onerror = erro; document.head.appendChild(s);
+}));
+async function mostrarQR(caixa){
+  try {
+    await carregarQR();
+    const q = qrcode(0, "M"); q.addData(caixa.dataset.qr); q.make();
+    const n = q.getModuleCount(); let d = "";
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c} ${r}h1v1h-1z`;
+    caixa.innerHTML = `<svg viewBox="-3 -3 ${n + 6} ${n + 6}" shape-rendering="crispEdges" role="img" aria-label="QR code do Pix"><rect x="-3" y="-3" width="${n + 6}" height="${n + 6}" fill="#fff"/><path d="${d}" fill="#1c1715"/></svg>`;
+    caixa.hidden = false;
+    return true;
+  } catch { bibQR = null; return false; }
+}
+
+async function copiar(texto){
+  try { await navigator.clipboard.writeText(texto); return true; } catch {}
+  try {
+    const t = document.createElement("textarea"); t.value = texto; t.style.cssText = "position:fixed;opacity:0";
+    document.body.appendChild(t); t.select(); const ok = document.execCommand("copy"); t.remove(); return ok;
+  } catch { return false; }
+}
+
+$("#glist").addEventListener("click", async e => {
+  const linha = e.target.closest(".gift-row"), copia = e.target.closest("[data-copy]"), verqr = e.target.closest("[data-verqr]");
+  if (linha) {
+    const li = linha.parentElement, abrir = !li.classList.contains("open");
+    $$("#glist .gift.open").forEach(o => { o.classList.remove("open"); o.querySelector(".gift-row").setAttribute("aria-expanded", "false"); });
+    if (!abrir) return;
+    const i = Number(li.dataset.i);
+    li.querySelector(".gift-panel > div").innerHTML = painel(i < 0 ? null : pres[i]);
+    li.classList.add("open"); linha.setAttribute("aria-expanded", "true");
+    const qr = li.querySelector(".pix-qr");
+    if (qr && !matchMedia("(pointer:coarse)").matches && await mostrarQR(qr)) li.querySelector("[data-verqr]").hidden = true;   // no computador o QR é o caminho natural
+  } else if (copia) {
+    const ok = await copiar(copia.dataset.copy);
+    copia.textContent = ok ? "Código copiado" : "Copie o código abaixo";
+    if (!ok && !copia.parentElement.querySelector(".pix-code"))
+      copia.insertAdjacentHTML("afterend", `<textarea class="pix-code" readonly rows="5">${esc(copia.dataset.copy)}</textarea>`);
+    setTimeout(() => { copia.textContent = "Copiar código Pix"; }, 2800);
+  } else if (verqr) {
+    verqr.textContent = "carregando…";
+    if (await mostrarQR(verqr.previousElementSibling)) verqr.hidden = true; else verqr.textContent = "QR code indisponível agora";
+  }
+});
+$("#gmore").addEventListener("click", () => { tudo = true; listar(); });
+
+if (pres.length) {
+  $("#ranges").innerHTML = FAIXAS.map((f, i) => `<button type="button" class="opt" role="radio" aria-checked="false" data-f="${i}"><svg viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="${ARO}"/></svg><span>${f[0]}</span></button>`).join("");
+  $("#ranges").addEventListener("click", e => {
+    const b = e.target.closest(".opt"); if (!b) return;
+    const f = Number(b.dataset.f);
+    faixa = faixa === f ? -1 : f; tudo = faixa >= 0;      // tocar de novo na mesma faixa volta para a lista inteira
+    $$("#ranges .opt").forEach(o => o.setAttribute("aria-checked", String(Number(o.dataset.f) === faixa)));
+    listar();
+  });
+  listar();
+} else {
+  $("#glist").innerHTML = `<li style="text-align:center"><a class="press solid" target="_blank" rel="noopener" href="${CASAR}">Abrir lista de presentes</a></li>`;
+}
+
+/* ---------- conforto de quem preenche ---------- */
+// Enter pula para o próximo campo em vez de enviar o cartão pela metade
+$("#form").addEventListener("keydown", e => {
+  if (e.key !== "Enter" || e.target.tagName !== "INPUT") return;
+  e.preventDefault();
+  const campos = $$("#form input, #form textarea").filter(c => c.offsetParent !== null);
+  const prox = campos[campos.indexOf(e.target) + 1];
+  prox ? prox.focus() : e.target.blur();
+});
+// guarda o que já foi escrito: se a pessoa sair para olhar outra coisa e voltar, não perde nada
+const rascunho = () => {
+  if (!$("#done").hidden) return;
+  st.nome = $("#nome").value; st.tel = $("#tel").value; st.recado = recado.value; lerAcomp();
+  gravar(KEY + "-rascunho", st);
+};
+$("#form").addEventListener("input", rascunho);
+$("#form").addEventListener("click", rascunho);
+
+/* ---------- início ---------- */
+$("#tel-line").hidden = !CONFIG.endpoint;   // pelo WhatsApp o número do convidado já chega junto
+if (!CONFIG.endpoint) $("#fine").textContent = "Depois de selar, é só enviar aos noivos pelo WhatsApp.";
+preencher();
+if (salvo && salvo.vai) recebido(false);
+</script>
+</body>
+</html>
